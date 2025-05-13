@@ -1,20 +1,21 @@
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f5f5f5;
+    background-color: #a58b7c;
 }
 header {
-    background-color: #522525;
+    background-color: #897777;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-.logo {
+.logo a{
     color: #fff;
     font-size: 24px;
     font-weight: bold;
     font-style: italic;
+    text-decoration: none;
 }
 .nav-left, .nav-right {
     display: flex;
@@ -26,7 +27,7 @@ header {
     margin: 0 10px;
     font-size: 16px;
 }
-.nav-left a:hover, .nav-right a:hover {
+.logo a:hover, .nav-left a:hover, .nav-right a:hover {
     text-decoration: underline;
 }
 .social-icons img, .nav-left img {
