@@ -10,7 +10,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background: #2a2a2a;
 }
 
 header {
@@ -550,7 +549,7 @@ h1{
 
 .frisbee-rules {
     background: rgba(255,255,255,0.04);
-    border-left: 5px solid #ffd86b;
+    border-left: 5px solid #ffffff;
     padding: 32px 28px 28px 32px;
     margin: 48px auto;
     max-width: 885px;
@@ -559,7 +558,7 @@ h1{
 }
 
 .frisbee-rules h3 {
-    color: #ffd86b;
+    color: #4fc3f7;
     font-size: 2rem;
     margin-bottom: 20px;
     letter-spacing: 2px;
@@ -597,7 +596,7 @@ h1{
 }
 
 .frisbee-rules ul ul li {
-    color: #cbd6dc;
+    color: #b3e5fc;
     font-size: 1em;
     font-weight: 400;
     padding-left: 0;
@@ -607,14 +606,14 @@ h1{
 
 .highlight-detail {
     background: rgba(255,255,255,0.04);
-    border: 2px solid #ffd86b;
+    border: 2px solid #ffffff;
     border-radius: 18px;
     margin-bottom: 56px;
     max-width: 900px;
 }
 
 .highlight-detail h3 {
-    color: #ffd86b;
+    color: #ffffff;
     font-size: 2.2rem;
     margin-bottom: 32px;
     letter-spacing: 2px;
@@ -642,15 +641,15 @@ h1{
 }
 
 .design-thinking-section {
-    max-width: 1200px;
-    padding: 70px 400px;
-    background: #2a2d3e;
-    border-radius: 18px;
-    box-shadow: 0 4px 24px rgba(0,0,0,0.13);
+    max-width: 900px;
     margin: 60px auto 40px auto;
+    background: rgba(255,255,255,0.04);
+    border-radius: 18px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.10);
+    padding: 48px 32px 36px 32px;
 }
 .design-thinking-section h1 {
-    color: #4fc3f7;
+    color: #ffd86b;
     font-size: 2.5rem;
     margin-bottom: 24px;
     letter-spacing: 2px;
@@ -670,18 +669,18 @@ h1{
     margin-bottom: 32px;
 }
 .dt-step {
-    background: #232946;
-    border-left: 6px solid #4fc3f7;
+    background: rgba(255,255,255,0.07);
+    border-left: 6px solid #ffd86b;
     border-radius: 12px;
-    padding: 24px 32px;
-    box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+    padding: 28px 24px 20px 32px;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.08);
     transition: box-shadow 0.2s;
 }
 .dt-step:hover {
-    box-shadow: 0 6px 24px rgba(79,195,247,0.13);
+    box-shadow: 0 6px 24px rgba(255,216,107,0.13);
 }
 .dt-step h2 {
-    color: #fff176;
+    color: #ffd86b;
     font-size: 1.4rem;
     margin-bottom: 12px;
     font-weight: 700;
@@ -692,26 +691,12 @@ h1{
     line-height: 1.7;
     margin: 0;
 }
-.dt-step-flex {
-    display: flex;
-    align-items: flex-start;
-    gap: 28px;
-}
-.dt-step-img {
-    width: 90px;
-    height: 90px;
-    object-fit: contain;
-    border-radius: 10px;
-    background: #fff;
-    box-shadow: 0 2px 8px rgba(79,195,247,0.10);
-    margin-top: 6px;
-}
 .dt-summary {
     margin-top: 24px;
-    background: #2a2d3e;
+    background: rgba(255,255,255,0.06);
     border-radius: 10px;
     padding: 18px 20px;
-    color: #4fc3f7;
+    color: #b3e5fc;
     font-size: 1.13rem;
     text-align: center;
     box-shadow: 0 1px 6px rgba(0,0,0,0.06);
