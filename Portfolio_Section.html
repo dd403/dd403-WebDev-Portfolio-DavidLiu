@@ -5,6 +5,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - David Liu</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+    <style>
+        .project-tags {
+            display: flex;
+            gap: 10px;
+            margin: 15px 0;
+        }
+
+        .project-tags span {
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 0.9rem;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            padding: 4px 12px;
+            background-color: rgba(21, 253, 0, 0.1);
+            color: #15fd00;
+            border: 1px solid rgba(21, 253, 0, 0.3);
+            border-radius: 4px;
+            transition: all 0.3s ease;
+        }
+
+        .project-tags span:hover {
+            background-color: rgba(21, 253, 0, 0.2);
+            transform: translateY(-2px);
+        }
+
+      
+    </style>
 </head>
 <body>
     <header>
@@ -32,7 +61,7 @@
                             <h3>Realms of Legend logo</h3>
                             <p>I designed a brand new logo for Realms of Legend, perfectly fitting the theme of their immersive fantasy RPG game. Based on their design philosophy. </p>
                             <div class="project-tags">
-                                <span>desgin</span>
+                                <span>Desgin</span>
                                 <span>Art</span>
                             </div>
                             <a href="#project1-detail" class="project-link">View Project</a>
@@ -135,4 +164,6 @@
     <footer class="copyright">
         <p>&copy; 2024 David Liu. All rights reserved.</p>
     </footer>
+    <canvas id="petCanvas"></canvas>
 </body>
+</html>

@@ -3,22 +3,195 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abigail Olaya Coaching</title>
+    <title>UN Global Goals - David Liu</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+    <style>
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            margin-top: 100px;
+            color: #ffffff;
+        }
+
+        .goal-section {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 2rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+        }
+
+        .goal-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+
+        .goal-header h1 {
+            font-size: 2.5rem;
+            color: #00d9ff;
+            margin-bottom: 1rem;
+        }
+
+        .goal-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            align-items: start;
+        }
+
+        .goal-text {
+            font-size: 1.1rem;
+            line-height: 1.8;
+        }
+
+        .goal-text p {
+            margin-bottom: 1.5rem;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.25rem;
+        }
+
+        .goal-images {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 1.5rem;
+        }
+
+        .image-placeholder {
+            background-color: rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            padding: 1rem;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .goal-image {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 4px;
+            transition: transform 0.3s ease;
+        }
+
+        .goal-image:hover {
+            transform: scale(1.02);
+        }
+
+        @media (max-width: 768px) {
+            .goal-content {
+                grid-template-columns: 1fr;
+            }
+
+            .goal-image {
+                height: 200px;
+            }
+        }
+
+        .speak-button {
+            position: fixed;
+            bottom: 30px;
+            right: 30px;
+            background-color: #00d9ff;
+            color: #141212;
+            border: none;
+            border-radius: 50px;
+            padding: 15px 25px;
+            font-size: 1.1rem;
+            cursor: pointer;
+            box-shadow: 0 4px 15px rgba(0, 217, 255, 0.3);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .speak-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 217, 255, 0.4);
+        }
+
+        .speak-button.speaking {
+            background-color: #ff4757;
+            box-shadow: 0 4px 15px rgba(255, 71, 87, 0.3);
+        }
+
+        .speak-button.speaking:hover {
+            box-shadow: 0 6px 20px rgba(255, 71, 87, 0.4);
+        }
+
+        @media (max-width: 768px) {
+            .speak-button {
+                bottom: 20px;
+                right: 20px;
+                padding: 12px 20px;
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">
             <a href="index.html">David Liu</a>
         </div>
-        <div class="nav-left">
+        <nav class="nav-left">
             <a href="Portfolio_Section.html">Portfolio Section</a>
             <a href="Design_Thinking_Process.html">Design Thinking Process</a>
             <a href="UN_Global_Goals.html">UN Global Goals</a>
             <a href="Accessibility_Statement.html">Accessibility Statement</a>
-        </div>
+        </nav>
     </header>
+
+    <main>
+        <section class="goal-section">
+            <div class="goal-header">
+                <h1>UN Global Goal 6: Clean Water and Sanitation</h1>
+            </div>
+            
+            <div class="goal-content">
+                <div class="goal-text">
+                    <p>
+                        Water is essential for life, yet millions of people around the world still lack access to safe and clean drinking water. 
+                        United Nations Sustainable Development Goal 6 (SDG 6) focuses on ensuring the availability and sustainable management 
+                        of water and sanitation for all by the year 2030.
+                    </p>
+                    
+                    <p>
+                        This goal addresses several critical issues: improving access to safe drinking water, building better sanitation systems, 
+                        promoting hygiene practices, protecting water-related ecosystems, and supporting water efficiency and treatment technologies. 
+                        Today, about 1 in 3 people globally do not have access to safe drinking water, and over half the world lacks proper sanitation. 
+                        These conditions contribute to the spread of deadly diseases and hinder economic development.
+                    </p>
+                    
+                    <p>
+                        Goal 6 also emphasizes the importance of managing water resources responsibly. It encourages countries to reduce pollution, 
+                        reuse wastewater, and work together across borders to protect shared water sources.
+                    </p>
+                    
+                    <p>
+                        Achieving SDG 6 can lead to better public health, stronger communities, gender equality (as women and girls often bear 
+                        the burden of water collection), and environmental protection. Clean water and sanitation are the foundation for building 
+                        a safe, fair, and sustainable future for all.
+                    </p>
+                </div>
+                
+                <div class="goal-images">
+                    <div class="image-placeholder">
+                        <img src="images/CleanWaterAccess.jpg" alt="Clean Water" class="goal-image">
+                    </div>
+                    <div class="image-placeholder">
+                        <img src="images/SanitationSystems.png"  alt="Sanitation" class="goal-image">
+                    </div>
+                    <div class="image-placeholder">
+                        <img src="images/WaterConservation.webp" alt="Water Ecosystems" class="goal-image">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
     <footer class="copyright">
         <p>&copy; 2024 David Liu. All rights reserved.</p>
     </footer>
-    </body>
+    <canvas id="petCanvas"></canvas>
+</body>
+
+</html>

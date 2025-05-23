@@ -3,22 +3,190 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abigail Olaya Coaching</title>
+    <title>Accessibility Statement - David Liu</title>
     <link rel="stylesheet" href="styles/style.css">
+    <script src="scripts/script.js" defer></script>
+    <style>
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            margin-top: 100px;
+            color: #ffffff;
+        }
+
+        .accessibility-section {
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .accessibility-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .accessibility-header h1 {
+            font-size: 2.5rem;
+            color: #15fd00;
+            margin-bottom: 1rem;
+        }
+
+        .accessibility-content {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-item {
+            margin-bottom: 3rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .feature-item:last-child {
+            border-bottom: none;
+        }
+
+        .feature-item h2 {
+            color: #15fd00;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .feature-item p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .compliance-info {
+            margin-top: 4rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .compliance-info h2 {
+            color: #15fd00;
+            margin-bottom: 1rem;
+        }
+
+        .compliance-info p {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: 1.1rem;
+            line-height: 1.6;
+        }
+
+        @media (max-width: 768px) {
+            .feature-item {
+                margin-bottom: 2rem;
+                padding-bottom: 1.5rem;
+            }
+
+            .feature-item h2 {
+                font-size: 1.3rem;
+            }
+
+            .feature-item p {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 <body>
     <header>
         <div class="logo">
             <a href="index.html">David Liu</a>
         </div>
-        <div class="nav-left">
+        <nav class="nav-left">
             <a href="Portfolio_Section.html">Portfolio Section</a>
             <a href="Design_Thinking_Process.html">Design Thinking Process</a>
             <a href="UN_Global_Goals.html">UN Global Goals</a>
             <a href="Accessibility_Statement.html">Accessibility Statement</a>
-        </div>
-</header>
-<footer class="copyright">
-    <p>&copy; 2024 David Liu. All rights reserved.</p>
-</footer>
+        </nav>
+    </header>
+
+    <main>
+        <section class="accessibility-section">
+            <div class="accessibility-header">
+                <h1>Accessibility Statement</h1>
+            </div>
+
+            <div class="accessibility-content">
+                <ul class="feature-list">
+                    <li class="feature-item">
+                        <h2>Semantic HTML Structure</h2>
+                        <p>
+                            The website uses semantic HTML5 elements (header, nav, main, section, article, footer) 
+                            to provide a clear document structure. This helps screen readers and other assistive 
+                            technologies better understand and navigate the content.
+                        </p>
+                    </li>
+
+                    <li class="feature-item">
+                        <h2>Alternative Text for Images</h2>
+                        <p>
+                            All images include descriptive alt text that conveys the essential information 
+                            about the image content. This ensures that users with visual impairments can 
+                            understand the visual content through screen readers.
+                        </p>
+                    </li>
+
+                    <li class="feature-item">
+                        <h2>Keyboard Navigation</h2>
+                        <p>
+                            The website is fully navigable using only a keyboard. All interactive elements 
+                            are accessible via keyboard controls, and the navigation menu is structured to 
+                            provide a logical tab order.
+                        </p>
+                    </li>
+
+                    <li class="feature-item">
+                        <h2>Color Contrast</h2>
+                        <p>
+                            Text and background colors have been carefully chosen to maintain a minimum 
+                            contrast ratio of 4.5:1 for normal text and 3:1 for large text, ensuring 
+                            readability for users with visual impairments.
+                        </p>
+                    </li>
+
+                    <li class="feature-item">
+                        <h2>Responsive Design</h2>
+                        <p>
+                            The website is responsive and adapts to different screen sizes and devices. 
+                            This ensures that content is accessible and readable on all devices, including 
+                            mobile phones and tablets.
+                        </p>
+                    </li>
+
+                    <li class="feature-item">
+                        <h2>Text Scaling</h2>
+                        <p>
+                            The website supports text scaling up to 200% without loss of content or functionality. 
+                            Users can adjust text size according to their needs using browser controls.
+                        </p>
+                    </li>
+                </ul>
+
+                <div class="compliance-info">
+                    <h2>WCAG 2.1 Compliance</h2>
+                    <p>
+                        This website strives to meet the Web Content Accessibility Guidelines (WCAG) 2.1 
+                        Level AA standards. We are committed to making our website accessible to all users, 
+                        including those with disabilities. If you encounter any accessibility issues, 
+                        please contact us, and we will work to address them promptly.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="copyright">
+        <p>&copy; 2024 David Liu. All rights reserved.</p>
+    </footer>
 </body>
+</html>
