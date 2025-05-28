@@ -8,94 +8,7 @@
     <script src="scripts/script.js"></script>
     <style>
 
-        .design-thinking-section {
-            background-color: #504b4b;
-            padding: 3rem;
-            border-radius: 8px;
-        }
-
-        h1 {
-            color: #ff0000;
-            font-size: 2.8rem;
-            text-align: center;
-            margin-bottom: 2rem;
-            font-weight: 800;
-            font-family: 'Poppins', sans-serif;
-            letter-spacing: -0.5px;
-            text-transform: uppercase;
-        }
-
         
-        .dt-image {
-            width: 100%;
-            height: auto;
-            max-width: 100%;
-            object-fit: contain;
-            border-radius: 4px;
-        }
-
-        /* 介绍文字样式 */
-        .dt-intro {
-            font-size: 1.2rem;
-            color: #ffffff;
-            text-align: center;
-            max-width: 800px;
-            margin: 2rem auto;
-            line-height: 1.8;
-            font-weight: 400;
-            font-family: 'Inter', sans-serif;
-            letter-spacing: 0.2px;
-        }
-
-        /* 步骤卡片样式 */
-        .dt-steps {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2rem;
-            margin-top: 3rem;
-        }
-
-        .dt-step:hover {
-            transform: translateY(-5px);
-            border-color: rgba(0, 0, 0, 0.3);
-        }
-
-        .dt-step h2 {
-            color: #ffffff;
-            font-size: 1.6rem;
-            margin-bottom: 1rem;
-            font-weight: 700;
-            font-family: 'Poppins', sans-serif;
-            letter-spacing: -0.3px;
-        }
-
-        .dt-step p {
-            color: #ffffff;
-            line-height: 1.7;
-            font-weight: 400;
-            font-size: 1.05rem;
-            font-family: 'Inter', sans-serif;
-            letter-spacing: 0.2px;
-        }
-
-        /* 响应式设计 */
-        @media (max-width: 768px) {
-            main {
-                padding: 1rem;
-            }
-
-            .design-thinking-section {
-                padding: 1.5rem;
-            }
-
-            .dt-steps {
-                grid-template-columns: 1fr;
-            }
-
-            h1 {
-                font-size: 2rem;
-            }
-        }
     </style>
 </head>
 <body>
@@ -174,6 +87,104 @@
                         accessibility, and aesthetics. Based on their suggestions, I improved the navigation, 
                         color contrast, and added more project details.
                     </p>
+                </article>
+            </div>
+        </section>
+
+        <section class="behind-curtain">
+            <h2>Behind the Curtain</h2>
+            <div class="curtain-content">
+                <article class="curtain-section">
+                    <h3>Code Structure</h3>
+                    <div class="code-screenshots">
+                        <figure>
+                            <img src="images/Screenshots_code/codestructure.png" alt="Project Structure">
+                            <figcaption>Project Structure - Organized folders for styles, scripts, and images</figcaption>
+                        </figure>
+                    </div>
+                </article>
+
+                <article class="curtain-section">
+                    <h3>Challenging Parts</h3>
+                    <div class="challenges">
+                        <div class="challenge-item">
+                            <h4>Back To Top Button</h4>
+                            <p>Creating a button the button will become visible when I Swipe down and when I press the button it will automatically return to the top. </p>
+                            <ul>
+                                <li>Use JavaScript to realize the function</li>
+                                <li>Handle button style(css)</li>
+                            </ul>
+                            <div class="code-screenshots">
+                                <figure>
+                                    <img src="images/Screenshots_code/jschallange.png" alt="Back to top Button">
+                                    <figcaption>Back To Top Button</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+
+                        <div class="challenge-item">
+                            <h4>Responsive Design</h4>
+                            <p>Making the website responsive across different devices required careful planning:</p>
+                            <ul>
+                                <li>Using CSS Grid and Flexbox for layouts</li>
+                                <li>Implementing media queries for different screen sizes</li>
+                                <li>Testing on various devices and browsers</li>
+                            </ul>
+                            <div class="code-screenshots">
+                                <figure>
+                                    <img src="images/Screenshots_code/responsive.png" alt="Responsive Design Code">
+                                    <figcaption>Responsive Design Implementation</figcaption>
+                                </figure>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="curtain-section">
+                    <h3>Developer Tools Usage</h3>
+                    <div class="dev-tools">
+                        <div class="tool-item">
+                            <h4>Chrome DevTools</h4>
+                            <ul>
+                                <li>Used Elements panel to debug layout issues</li>
+                                <li>Console for JavaScript debugging</li>
+                                <li>Network panel to optimize image loading</li>
+                                <li>Performance panel to improve animations</li>
+                            </ul>
+                        </div>
+                        <div class="tool-item">
+                            <h4>VS Code</h4>
+                            <ul>
+                                <li>Live Server for real-time preview</li>
+                                <li>Git integration for version control</li>
+                                <li>Extensions for HTML/CSS/JS support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="curtain-section">
+                    <h3>Learning Outcomes</h3>
+                    <div class="learnings">
+                        <div class="learning-item">
+                            <h4>Technical Skills</h4>
+                            <ul>
+                                <li>Advanced CSS animations and transitions</li>
+                                <li>JavaScript event handling and DOM manipulation</li>
+                                <li>Responsive design principles</li>
+                                <li>Performance optimization techniques</li>
+                            </ul>
+                        </div>
+                        <div class="learning-item">
+                            <h4>Development Process</h4>
+                            <ul>
+                                <li>Importance of planning and wireframing</li>
+                                <li>Version control best practices</li>
+                                <li>Debugging and problem-solving strategies</li>
+                                <li>User testing and feedback implementation</li>
+                            </ul>
+                        </div>
+                    </div>
                 </article>
             </div>
         </section>

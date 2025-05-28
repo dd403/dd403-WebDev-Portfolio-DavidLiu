@@ -6,7 +6,43 @@ document.addEventListener('DOMContentLoaded', () => {
     aboutMeSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
   });
 });
+// Back to top functionality
+function initBackToTop() {
+    const backToTopButton = document.createElement('div');
+    backToTopButton.className = 'back-to-top';
+    document.body.appendChild(backToTopButton);
 
+    // Show button when scrolling down
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 300) {
+            backToTopButton.classList.add('visible');
+        } else {
+            backToTopButton.classList.remove('visible');
+        }
+    });
+
+    // Scroll to top when clicked
+    backToTopButton.addEventListener('click', () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+}
+
+
+// Initialize all features when window loads
+window.addEventListener('load', () => {
+    // Initialize pet
+    const canvas = document.getElementById('petCanvas');
+    if (canvas) {
+        canvas.classList.add('pet-draggable');
+        const pet = new Pet(canvas);
+    }
+
+    // Initialize back to top button
+    initBackToTop();
+}); 
 
 class Pet {
   constructor(canvas) {
@@ -194,13 +230,3 @@ class Pet {
   }
 }
 
-// Initialize pet when window loads
-window.addEventListener('load', () => {
-  const canvas = document.getElementById('petCanvas');
-  if (canvas) {
-      canvas.classList.add('pet-draggable');
-      const pet = new Pet(canvas);
-  } else {
-      console.error('Canvas element not found');
-  }
-}); 
