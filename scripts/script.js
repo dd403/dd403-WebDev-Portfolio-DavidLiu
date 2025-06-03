@@ -9,8 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
 // Back to top functionality
 function initBackToTop() {
     const backToTopButton = document.createElement('div');
-    backToTopButton.className = 'back-to-top';
-    document.body.appendChild(backToTopButton);
+    backToTopButton.className = 'back-to-top';//use css to style this button
+    document.body.appendChild(backToTopButton);//Add this <div> element to the <body> element of the webpage
 
     // Show button when scrolling down
     window.addEventListener('scroll', () => {
@@ -25,7 +25,7 @@ function initBackToTop() {
     backToTopButton.addEventListener('click', () => {
         window.scrollTo({
             top: 0,
-            behavior: 'smooth'
+            behavior: 'smooth'//add smooth scrolling behavior to the scrolling
         });
     });
 }

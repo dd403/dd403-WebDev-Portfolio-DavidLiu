@@ -345,10 +345,6 @@ h1{
     transition: transform 0.3s ease;
 }
 
-.skill-card:hover {
-    transform: translateY(-5px);
-}
-
 .skill-card h3 {
     color: #fff;
     font-size: 24px;
@@ -815,14 +811,9 @@ h1{
     visibility: visible;
 }
 
-.back-to-top:hover {
-    background-color: rgba(255, 255, 255, 0.2);
-    transform: translateY(-3px);
-}
 
 .back-to-top::before {
-    content: '↑';
-    color: #fff;
+    content: '⬆️';
     font-size: 24px;
     font-weight: bold;
 }
@@ -874,6 +865,7 @@ h1{
 
 .code-screenshots figcaption {
     margin-top: 1rem;
+    margin-bottom: 1rem;
     color: #ffffff;
     font-style: italic;
 }
