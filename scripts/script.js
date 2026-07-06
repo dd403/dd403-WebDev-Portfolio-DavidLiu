@@ -97,8 +97,9 @@ class Pet {
 
   async loadSprites() {
       const types = ['walk', 'talk', 'smell', 'power', 'front', 'drag'];
+      const frameCounts = { walk: 4, talk: 10, smell: 10, power: 10, front: 4, drag: 4 };
       for (const type of types) {
-          for (let i = 0; i < 10; i++) {
+          for (let i = 0; i < frameCounts[type]; i++) {
               const img = new Image();
               img.src = `styles/poop/poop_${type}-${i}.png`;
               try {
@@ -229,4 +230,3 @@ class Pet {
       requestAnimationFrame(() => this.animate());
   }
 }
-
