@@ -96,23 +96,28 @@ class Pet {
   }
 
   async loadSprites() {
-      const types = ['walk', 'talk', 'smell', 'power', 'front', 'drag'];
       const frameCounts = { walk: 4, talk: 10, smell: 10, power: 10, front: 4, drag: 4 };
-      for (const type of types) {
-          for (let i = 0; i < frameCounts[type]; i++) {
+      const loadAnimation = async (type, priority = 'auto') => {
+          const frames = await Promise.all(
+              Array.from({ length: frameCounts[type] }, (_, i) => new Promise(resolve => {
               const img = new Image();
+              img.fetchPriority = priority;
+              img.onload = () => resolve(img);
+              img.onerror = () => {
+                  console.error(`Error loading image ${img.src}`);
+                  resolve(null);
+              };
               img.src = `styles/poop/poop_${type}-${i}.png`;
-              try {
-                  await new Promise((resolve, reject) => {
-                      img.onload = resolve;
-                      img.onerror = () => reject(new Error(`Failed to load image: ${img.src}`));
-                  });
-                  this.sprites[type].push(img);
-              } catch (error) {
-                  console.error(`Error loading image ${img.src}:`, error);
-              }
-          }
-      }
+          }))
+          );
+          this.sprites[type] = frames.filter(Boolean);
+      };
+
+      // Make the pet visible first, then load all optional animations together.
+      await loadAnimation('front', 'high');
+      await Promise.all(
+          ['walk', 'talk', 'smell', 'power', 'drag'].map(type => loadAnimation(type))
+      );
   }
 
   resizeCanvas() {
