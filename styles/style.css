@@ -114,7 +114,7 @@ main {
     justify-content: center;
     align-items: center;
     background-color: #3e3c3b;
-    background-image: url('../images/background.png');
+    background-image: url('../images/background.webp');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
